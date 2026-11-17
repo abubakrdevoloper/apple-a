@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#f5f5f7">
+  <title>Apple — Innovatsiya har bir detalda</title>
+  <link rel="preconnect" href="https://images.unsplash.com">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="announcement">Yangi avlod texnologiyalari bilan tanishing. <a href="#catalog">Katalogni ko‘rish</a> →</div>
+  <header class="site-header">
+    <nav class="navbar" aria-label="Asosiy navigatsiya">
+      <a class="brand" href="#home" aria-label="Apple bosh sahifa"><span class="apple-mark">●</span></a>
+      <button class="menu-toggle" id="menuToggle" aria-label="Menyuni ochish" aria-expanded="false">☰</button>
+      <div class="nav-links" id="navLinks">
+        <a href="#iphone">iPhone</a><a href="#ipad">iPad</a><a href="#mac">Mac</a>
+        <a href="#watch">Watch</a><a href="#airpods">AirPods</a><a href="#accessories">Aksessuarlar</a>
+      </div>
+      <div class="nav-actions">
+        <button class="icon-btn" id="searchToggle" aria-label="Qidirish">⌕</button>
+        <button class="icon-btn" id="accountBtn" aria-label="Hisobga kirish">♙</button>
+        <a class="bag-link" href="#catalog" aria-label="Xaridlar">▢</a>
+      </div>
+    </nav>
+    <div class="search-panel" id="searchPanel"><input id="searchInput" type="search" placeholder="Mahsulot nomini qidiring..." aria-label="Mahsulot qidirish"><button id="searchClose">Yopish</button></div>
+  </header>
+
+  <main id="home">
+    <section class="hero">
+      <div class="hero-copy">
+        <p class="eyebrow">YANGI. KUCHLI. SIZ UCHUN.</p>
+        <h1>Yangi imkoniyatlar<br><span>shu yerdan boshlanadi.</span></h1>
+        <p class="hero-sub">Apple olamidagi sevimli qurilmalaringizni kashf eting. Dizayn, quvvat va qulaylik bir joyda.</p>
+        <div class="hero-actions"><a class="btn btn-dark" href="#catalog">Katalogni ko‘rish</a><button class="btn btn-light" data-open-register>Ro‘yxatdan o‘tish <span>↗</span></button></div>
+      </div>
+      <div class="hero-visual">
+        <div class="hero-glow"></div>
+        <img src="https://images.unsplash.com/photo-1695048133142-1a20484d2569?auto=format&fit=crop&w=1100&q=90" alt="Premium smartfon dizayni">
+        <div class="hero-caption"><span>iPhone</span><b>Yangi tajriba.</b></div>
+      </div>
+      <div class="hero-pagination"><span class="active"></span><span></span><span></span><small>01 / 03</small></div>
+    </section>
+
+    <section class="quick-categories" aria-label="Kategoriyalar">
+      <a href="#iphone"><span class="cat-icon">▯</span> iPhone</a><a href="#ipad"><span class="cat-icon">▭</span> iPad</a>
+      <a href="#mac"><span class="cat-icon">▱</span> Mac</a><a href="#watch"><span class="cat-icon">◷</span> Watch</a>
+      <a href="#airpods"><span class="cat-icon">♫</span> AirPods</a><a href="#accessories"><span class="cat-icon">✧</span> Aksessuarlar</a>
+    </section>
+
+    <section class="feature-section" id="iphone">
+      <div class="section-heading"><div><p class="eyebrow">SMARTFONLAR</p><h2>iPhone bilan tanishing.</h2></div><a href="#catalog" class="text-link">Barcha iPhone’lar <span>→</span></a></div>
+      <div class="carousel-wrap">
+        <button class="carousel-arrow prev" id="prevSlide" aria-label="Oldingi slayd">‹</button>
+        <div class="carousel" id="heroCarousel">
+          <article class="slide slide-one"><div><p class="eyebrow">PRO DARAJADAGI TAJRIBA</p><h3>iPhone 17 Pro</h3><p>Har bir lahzada yanada ko‘proq imkoniyat.</p><button class="pill-link" data-product="iPhone 17 Pro">Batafsil ko‘rish ↗</button></div><img src="https://images.unsplash.com/photo-1695048133142-1a20484d2569?auto=format&fit=crop&w=800&q=85" alt="iPhone uslubidagi premium telefon"></article>
+          <article class="slide slide-two"><div><p class="eyebrow">NOZIK. YENGIL. ZAMONAVIY.</p><h3>iPhone Air</h3><p>Yengillik va qudrat uyg‘unligi.</p><button class="pill-link" data-product="iPhone Air">Batafsil ko‘rish ↗</button></div><img src="https://images.unsplash.com/photo-1605236453806-6ff36851218e?auto=format&fit=crop&w=800&q=85" alt="Zamonaviy smartfon"></article>
+          <article class="slide slide-three"><div><p class="eyebrow">KUNDALIK MUKAMMALLIK</p><h3>iPhone 16</h3><p>Sevimli lahzalaringiz uchun yaratilgan.</p><button class="pill-link" data-product="iPhone 16">Batafsil ko‘rish ↗</button></div><img src="https://images.unsplash.com/photo-1592750475338-74b7b21085ab?auto=format&fit=crop&w=800&q=85" alt="Smartfon mahsuloti"></article>
+        </div>
+        <button class="carousel-arrow next" id="nextSlide" aria-label="Keyingi slayd">›</button>
+      </div>
+      <div class="carousel-dots" id="carouselDots"><button class="selected" aria-label="1-slayd"></button><button aria-label="2-slayd"></button><button aria-label="3-slayd"></button></div>
+    </section>
+
+    <section class="catalog-section" id="catalog">
+      <div class="section-heading"><div><p class="eyebrow">APPLE OLAMI</p><h2>O‘zingizga mos qurilmani toping.</h2><p class="section-desc">Har bir mahsulot o‘ziga xos dizayn va imkoniyatlarga ega.</p></div></div>
+      <div class="filter-row" role="group" aria-label="Katalog filtrlari">
+        <button class="filter active" data-filter="all">Barchasi</button><button class="filter" data-filter="iphone">iPhone</button><button class="filter" data-filter="ipad">iPad</button><button class="filter" data-filter="mac">Mac</button><button class="filter" data-filter="watch">Watch</button><button class="filter" data-filter="audio">Audio</button><button class="filter" data-filter="other">Boshqalar</button>
+      </div>
+      <div class="product-grid" id="productGrid">
+        <article class="product-card p-iphone" data-category="iphone" data-name="iPhone 17 Pro"><div class="card-top"><span class="tag">YANGI</span><button class="heart" aria-label="Sevimlilarga qo‘shish">♡</button></div><div class="product-image"><img src="https://images.unsplash.com/photo-1695048133142-1a20484d2569?auto=format&fit=crop&w=700&q=85" alt="iPhone 17 Pro uchun mahsulot tasviri"></div><div class="product-info"><p class="product-kicker">PRO. YUQORI IMKONIYAT.</p><h3>iPhone 17 Pro</h3><p>Pro darajadagi kamera va quvvat.</p><div class="card-bottom"><strong>Dan 1 299 $</strong><button class="buy-btn" data-buy="iPhone 17 Pro">Sotib olish</button></div></div></article>
+        <article class="product-card p-air" data-category="iphone" data-name="iPhone Air"><div class="card-top"><span class="tag tag-soft">YENGIL DIZAYN</span><button class="heart" aria-label="Sevimlilarga qo‘shish">♡</button></div><div class="product-image"><img src="https://images.unsplash.com/photo-1605236453806-6ff36851218e?auto=format&fit=crop&w=700&q=85" alt="iPhone Air uchun mahsulot tasviri"></div><div class="product-info"><p class="product-kicker">NOZIK VA YENGIL</p><h3>iPhone Air</h3><p>Yengil korpus, katta taassurot.</p><div class="card-bottom"><strong>Dan 999 $</strong><button class="buy-btn" data-buy="iPhone Air">Sotib olish</button></div></div></article>
+        <article class="product-card p-16" data-category="iphone" data-name="iPhone 16"><div class="card-top"><span class="tag tag-green">OMMABOP</span><button class="heart" aria-label="Sevimlilarga qo‘shish">♡</button></div><div class="product-image"><img src="https://images.unsplash.com/photo-1592750475338-74b7b21085ab?auto=format&fit=crop&w=700&q=85" alt="iPhone 16 uchun mahsulot tasviri"></div><div class="product-info"><p class="product-kicker">KUNDALIK MUKAMMALLIK</p><h3>iPhone 16</h3><p>Kuchli chip va yorqin ekran.</p><div class="card-bottom"><strong>Dan 799 $</strong><button class="buy-btn" data-buy="iPhone 16">Sotib olish</button></div></div></article>
+        <article class="product-card p-16pro" data-category="iphone" data-name="iPhone 16 Pro Max"><div class="card-top"><span class="tag">PRO MAX</span><button class="heart" aria-label="Sevimlilarga qo‘shish">♡</button></div><div class="product-image"><img src="https://images.unsplash.com/photo-1603891128711-11b4b03bb138?auto=format&fit=crop&w=700&q=85" alt="iPhone Pro Max uchun mahsulot tasviri"></div><div class="product-info"><p class="product-kicker">KATTA IMKONIYATLAR</p><h3>iPhone 16 Pro Max</h3><p>Katta ekran va Pro kamera tizimi.</p><div class="card-bottom"><strong>Dan 1 099 $</strong><button class="buy-btn" data-buy="iPhone 16 Pro Max">Sotib olish</button></div></div></article>
+        <article class="product-card p-15" data-category="iphone" data-name="iPhone 15"><div class="card-top"><span class="tag tag-soft">ISHLONCHLI TANLOV</span><button class="heart" aria-label="Sevimlilarga qo‘shish">♡</button></div><div class="product-image"><img src="https://images.unsplash.com/photo-1591337676887-a217a6970a8a?auto=format&fit=crop&w=700&q=85" alt="iPhone 15 uchun mahsulot tasviri"></div><div class="product-info"><p class="product-kicker">SODDA VA QULAY</p><h3>iPhone 15</h3><p>Dinamik dizayn va ajoyib kamera.</p><div class="card-bottom"><strong>Dan 649 $</strong><button class="buy-btn" data-buy="iPhone 15">Sotib olish</button></div></div></article>
+        <article class="product-card p-se" data-category="iphone" data-name="iPhone SE"><div class="card-top"><span class="tag tag-green">IXCHAM</span><button class="heart" aria-label="Sevimlilarga qo‘shish">♡</button></div><div class="product-image"><img src="https://images.unsplash.com/photo-1580910051074-3eb694886505?auto=format&fit=crop&w=700&q=85" alt="iPhone SE uchun mahsulot tasviri"></div><div class="product-info"><p class="product-kicker">IXCHAM QULAYLIK</p><h3>iPhone SE</h3><p>Klassik ko‘rinishdagi ixcham telefon.</p><div class="card-bottom"><strong>Dan 429 $</strong><button class="buy-btn" data-buy="iPhone SE">Sotib olish</button></div></div></article>
+
+        <article class="product-card p-ipad" id="ipad" data-category="ipad" data-name="iPad Pro"><div class="card-top"><span class="tag">PRO</span><button class="heart" aria-label="Sevimlilarga qo‘shish">♡</button></div><div class="product-image"><img src="https://images.unsplash.com/photo-1544244015-0df4b3ffc6b0?auto=format&fit=crop&w=700&q=85" alt="iPad planshet tasviri"></div><div class="product-info"><p class="product-kicker">KATTA IJODIY MAYDON</p><h3>iPad Pro</h3><p>Ijod, ish va o‘qish uchun qudrat.</p><div class="card-bottom"><strong>Dan 999 $</strong><button class="buy-btn" data-buy="iPad Pro">Sotib olish</button></div></div></article>
+        <article class="product-card p-ipadmini" data-category="ipad" data-name="iPad Air"><div class="card-top"><span class="tag tag-soft">YENGIL</span><button class="heart" aria-label="Sevimlilarga qo‘shish">♡</button></div><div class="product-image"><img src="https://images.unsplash.com/photo-1561159229-5c6b7e7f3a5d?auto=format&fit=crop&w=700&q=85" alt="iPad Air planshet tasviri"></div><div class="product-info"><p class="product-kicker">HAR KUN UCHUN</p><h3>iPad Air</h3><p>Yengil va ko‘p vazifali planshet.</p><div class="card-bottom"><strong>Dan 599 $</strong><button class="buy-btn" data-buy="iPad Air">Sotib olish</button></div></div></article>
+        <article class="product-card p-mac" id="mac" data-category="mac" data-name="MacBook Pro"><div class="card-top"><span class="tag">PRO KUCH</span><button class="heart" aria-label="Sevimlilarga qo‘shish">♡</button></div><div class="product-image"><img src="https://images.unsplash.com/photo-1517336714731-489689fd1ca8?auto=format&fit=crop&w=700&q=85" alt="MacBook Pro noutbuk tasviri"></div><div class="product-info"><p class="product-kicker">ISH UCHUN YARATILGAN</p><h3>MacBook Pro</h3><p>Murakkab vazifalar uchun yuqori quvvat.</p><div class="card-bottom"><strong>Dan 1 599 $</strong><button class="buy-btn" data-buy="MacBook Pro">Sotib olish</button></div></div></article>
+        <article class="product-card p-macair" data-category="mac" data-name="MacBook Air"><div class="card-top"><span class="tag tag-green">YENGIL</span><button class="heart" aria-label="Sevimlilarga qo‘shish">♡</button></div><div class="product-image"><img src="https://images.unsplash.com/photo-149
+9656871958-2f3ba986b6b4?auto=format&fit=crop&w=700&q=85" alt="MacBook Air noutbuk tasviri"></div><div class="product-info"><p class="product-kicker">YENGIL VA TEZKOR</p><h3>MacBook Air</h3><p>Harakatdagi hayot tarzi uchun.</p><div class="card-bottom"><strong>Dan 1 099 $</strong><button class="buy-btn" data-buy="MacBook Air">Sotib olish</button></div></div></article>
+        <article class="product-card p-imac" data-category="mac" data-name="iMac"><div class="card-top"><span class="tag tag-soft">ALL-IN-ONE</span><button class="heart" aria-label="Sevimlilarga qo‘shish">♡</button></div><div class="product-image"><img src="https://images.unsplash.com/photo-1527443224154-c4a3942d3acf?auto=format&fit=crop&w=700&q=85" alt="iMac kompyuter tasviri"></div><div class="product-info"><p class="product-kicker">ISH STOLINGIZ UCHUN</p><h3>iMac</h3><p>Yagona korpusda chiroyli ish muhiti.</p><div class="card-bottom"><strong>Dan 1 299 $</strong><button class="buy-btn" data-buy="iMac">Sotib olish</button></div></div></article>
+        <article class="product-card p-watch" id="watch" data-category="watch" data-name="Apple Watch Ultra"><div class="card-top"><span class="tag">ULTRA</span><button class="heart" aria-label="Sevimlilarga qo‘shish">♡</button></div><div class="product-image"><img src="https://images.unsplash.com/photo-1544117519-31a4b719223d?auto=format&fit=crop&w=700&q=85" alt="Apple Watch aqlli soat tasviri"></div><div class="product-info"><p class="product-kicker">FAOL HAYOT UCHUN</p><h3>Apple Watch Ultra</h3><p>Mustahkam dizayn va ilg‘or imkoniyatlar.</p><div class="card-bottom"><strong>Dan 799 $</strong><button class="buy-btn" data-buy="Apple Watch Ultra">Sotib olish</button></div></div></article>
+        <article class="product-card p-watchs" data-category="watch" data-name="Apple Watch Series"><div class="card-top"><span class="tag tag-green">SERIES</span><button class="heart" aria-label="Sevimlilarga qo‘shish">♡</button></div><div class="product-image"><img src="https://images.unsplash.com/photo-1434493789847-2f02dc6ca35d?auto=format&fit=crop&w=700&q=85" alt="Apple Watch Series aqlli soat tasviri"></div><div class="product-info"><p class="product-kicker">KUNDALIK HAMROH</p><h3>Apple Watch Series</h3><p>Kun davomida foydali ma’lumotlar.</p><div class="card-bottom"><strong>Dan 399 $</strong><button class="buy-btn" data-buy="Apple Watch Series">Sotib olish</button></div></div></article>
+        <article class="product-card p-airpods" id="airpods" data-category="audio" data-name="AirPods Pro"><div class="card-top"><span class="tag">PRO AUDIO</span><button class="heart" aria-label="Sevimlilarga qo‘shish">♡</button></div><div class="product-image"><img src="https://images.unsplash.com/photo-1603351154351-5e2d0600bb77?auto=format&fit=crop&w=700&q=85" alt="AirPods quloqchinlari tasviri"></div><div class="product-info"><p class="product-kicker">OVOZGA SHO‘NG‘ING</p><h3>AirPods Pro</h3><p>Sevimli musiqangizga yaqinroq.</p><div class="card-bottom"><strong>Dan 249 $</strong><button class="buy-btn" data-buy="AirPods Pro">Sotib olish</button></div></div></article>
+        <article class="product-card p-max" data-category="audio" data-name="AirPods Max"><div class="card-top"><span class="tag tag-soft">MAX</span><button class="heart" aria-label="Sevimlilarga qo‘shish">♡</button></div><div class="product-image"><img src="https://images.unsplash.com/photo-1546435770-a3e426bf472b?auto=format&fit=crop&w=700&q=85" alt="AirPods Max quloqchin tasviri"></div><div class="product-info"><p class="product-kicker">YUKSAK OVOZ</p><h3>AirPods Max</h3><p>Qulaylik va sifatli audio tajriba.</p><div class="card-bottom"><strong>Dan 549 $</strong><button class="buy-btn" data-buy="AirPods Max">Sotib olish</button></div></div></article>
+        <article class="product-card p-tv" data-category="other" data-name="Apple TV 4K"><div class="card-top"><span class="tag tag-green">ENTERTAINMENT</span><button class="heart" aria-label="Sevimlilarga qo‘shish">♡</button></div><div class="product-image"><img src="https://images.unsplash.com/photo-1593359677879-a4bb92f829d1?auto=format&fit=crop&w=700&q=85" alt="Apple TV uchun televizor tasviri"></div><div class="product-info"><p class="product-kicker">UYDA KINO MUHITI</p><h3>Apple TV 4K</h3><p>Ko‘ngilochar kontent bir joyda.</p><div class="card-bottom"><strong>Dan 129 $</strong><button class="buy-btn" data-buy="Apple TV 4K">Sotib olish</button></div></div></article>
+        <article class="product-card p-vision" data-category="other" data-name="Apple Vision Pro"><div class="card-top"><span class="tag">SPATIAL</span><button class="heart" aria-label="Sevimlilarga qo‘shish">♡</button></div><div class="product-image"><img src="https://images.unsplash.com/photo-1622979135225-d2ba269cf1ac?auto=format&fit=crop&w=700&q=85" alt="Virtual reallik garniturasi tasviri"></div><div class="product-info"><p class="product-kicker">FAZOVIY HISOBLASH</p><h3>Apple Vision Pro</h3><p>Raqamli olam bilan yangi aloqa.</p><div class="card-bottom"><strong>Dan 3 499 $</strong><button class="buy-btn" data-buy="Apple Vision Pro">Sotib olish</button></div></div></article>
+        <article class="product-card p-home" id="accessories" data-category="other" data-name="HomePod"><div class="card-top"><span class="tag tag-soft">SMART HOME</span><button class="heart" aria-label="Sevimlilarga qo‘shish">♡</button></div><div class="product-image"><img src="https://images.unsplash.com/photo-1608043152269-423dbba4e7e1?auto=format&fit=crop&w=700&q=85" alt="HomePod aqlli kolonka tasviri"></div><div class="product-info"><p class="product-kicker">UYINGIZ UCHUN OVOZ</p><h3>HomePod</h3><p>Uy muhitiga mos aqlli audio.</p><div class="card-bottom"><strong>Dan 299 $</strong><button class="buy-btn" data-buy="HomePod">Sotib olish</button></div></div></article>
+        <article class="product-card p-pencil" data-category="other" data-name="Apple Pencil"><div class="card-top"><span class="tag tag-green">IJOD</span><button class="heart" aria-label="Sevimlilarga qo‘shish">♡</button></div><div class="product-image"><img src="https://images.unsplash.com/photo-1589739900243-4b52cd9dd8df?auto=format&fit=crop&w=700&q=85" alt="Raqamli qalam aksessuari tasviri"></div><div class="product-info"><p class="product-kicker">G‘OYALARINGIZ UCHUN</p><h3>Apple Pencil</h3><p>Chizish va qaydlar uchun qulay.</p><div class="card-bottom"><strong>Dan 129 $</strong><button class="buy-btn" data-buy="Apple Pencil">Sotib olish</button></div></div></article>
+      </div>
+      <p class="no-results" id="noResults" hidden>Bu qidiruv bo‘yicha mahsulot topilmadi.</p>
+    </section>
+
+    <section class="wide-promo">
+      <div class="promo-copy"><p class="eyebrow">APPLE EKOTIZIMI</p><h2>Barcha qurilmalaringiz.<br><span>Bitta uyg‘un tajriba.</span></h2><p>Mac, iPhone, iPad va Watch birgalikda ishlaganda kundalik vazifalar yanada osonlashadi.</p><a class="btn btn-dark" href="#catalog">Qurilmalarni ko‘rish →</a></div>
+      <div class="promo-art"><div class="device device-phone"></div><div class="device device-tablet"></div><div class="device device-laptop"></div><div class="device device-watch"></div></div>
+    </section>
+
+    <section class="service-strip">
+      <div><span>◇</span><h3>Yordam va maslahat</h3><p>Tanlovingiz bo‘yicha ma’lumot oling.</p></div>
+      <div><span>↗</span><h3>Qulay buyurtma</h3><p>Buyurtma formasini tez to‘ldiring.</p></div>
+      <div><span>⌂</span><h3>Apple ekotizimi</h3><p>Qurilmalar o‘rtasidagi uyg‘unlik.</p></div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="footer-top"><a class="brand footer-brand" href="#home">●</a><p>Texnologiya — ijod va imkoniyatlar uchun.</p><a href="#home">Yuqoriga ↑</a></div>
+    <div class="footer-columns"><div><b>Mahsulotlar</b><a href="#iphone">iPhone</a><a href="#ipad">iPad</a><a href="#mac">Mac</a></div><div><b>Qurilmalar</b><a href="#watch">Apple Watch</a><a href="#airpods">AirPods</a><a href="#accessories">Aksessuarlar</a></div><div><b>Yordam</b><a href="#catalog">Katalog</a><a href="#" data-open-register>Ro‘yxatdan o‘tish</a><a href="https://www.apple.com" target="_blank" rel="noreferrer">Apple rasmiy sayti ↗</a></div></div>
+    <div class="footer-bottom"><span>© 2026 Apple Store concept. O‘quv loyiha.</span><span>Narxlar va takliflar namuna sifatida keltirilgan.</span></div>
+  </footer>
+
+  <div class="modal" id="registerModal" aria-hidden="true" role="dialog" aria-modal="true" aria-labelledby="registerTitle">
+    <div class="modal-backdrop" data-close-modal></div><div class="modal-card">
+      <button class="modal-close" data-close-modal aria-label="Yopish">×</button><div class="modal-mark">●</div><p class="eyebrow">APPLE ID TAJRIBASI</p><h2 id="registerTitle">Ro‘yxatdan o‘ting.</h2><p class="modal-intro">Mahsulot haqida ma’lumot va buyurtma yangiliklarini olish uchun ma’lumotlaringizni kiriting.</p>
+      <form id="registerForm"><label>Ism va familiya<input name="fullname" type="text" placeholder="Ismingiz" required minlength="2"></label><label>Email manzil<input name="email" type="email" placeholder="name@example.com" required></label><label>Telefon raqam<input name="phone" type="tel" placeholder="+998 90 123 45 67" required></label><label>Parol<input name="password" type="password" placeholder="Kamida 8 ta belgi" required minlength="8"></label><button class="btn btn-dark full-btn" type="submit">Ro‘yxatdan o‘tish</button><p class="form-note" id="registerMessage" aria-live="polite"></p></form>
+      <p class="switch-note">Hisobingiz bormi? <button type="button" id="showLogin">Kirish</button></p>
+    </div>
+  </div>
+
+  <div class="modal" id="purchaseModal" aria-hidden="true" role="dialog" aria-modal="true" aria-labelledby="purchaseTitle">
+    <div class="modal-backdrop" data-close-modal></div><div class="modal-card purchase-card">
+      <button class="modal-close" data-close-modal aria-label="Yopish">×</button><div class="modal-mark">▢</div><p class="eyebrow">BUYURTMA</p><h2 id="purchaseTitle">Xaridni rasmiylashtirish.</h2><p class="modal-intro">Tanlangan mahsulot: <strong id="selectedProduct">iPhone</strong></p>
+      <form id="purchaseForm"><label>Ismingiz<input name="buyer" type="text" placeholder="Ism va familiya" required></label><label>Telefon raqamingiz<input name="buyerPhone" type="tel" placeholder="+998..." required></label><label>Mahsulot rangi<select name="color"><option>Tanlang</option><option>Qora</option><option>Oq</option><option>Kumush</option><option>Ko‘k</option><option>Tabiiy titan</option></select></label><label>Qo‘shimcha izoh<textarea name="note" rows="3" placeholder="Xohishingiz bo‘lsa yozing..."></textarea></label><button class="btn btn-dark full-btn" type="submit">Buyurtma yuborish</button><p class="form-note" id="purchaseMessage" aria-live="polite"></p></form>
+    </div>
+  </div>
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+  <script src="script.js"></script>
+</body>
+</html>
